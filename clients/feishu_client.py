@@ -19,31 +19,31 @@ pyautogui.PAUSE = 0.15
 
 
 class FeishuBrowserClient:
-    """通过PyAutoGUI操作夸克浏览器中的飞书文档。"""
+    """通过PyAutoGUI操作Chrome浏览器中的飞书文档。"""
 
     def __init__(self, tab_number: int = 1):
         self.tab_number = tab_number
-        self.quark_window = None
+        self.browser_window = None
         self._last_cell_ref = None
         self._last_amount_col = None       # 记录上次写入的行号，用于后续定位
 
-    def find_quark_window(self):
-        """查找夸克浏览器窗口。"""
+    def find_browser_window(self):
+        """查找Chrome浏览器窗口。"""
         windows = gw.getWindowsWithTitle("")
         for w in windows:
-            if "夸克" in w.title:
-                self.quark_window = w
+            if "Chrome" in w.title:
+                self.browser_window = w
                 return w
         return None
 
     def activate_window(self):
-        """激活夸克浏览器窗口。"""
-        if not self.quark_window:
-            self.find_quark_window()
-        if self.quark_window:
-            if self.quark_window.isMinimized:
-                self.quark_window.restore()
-            self.quark_window.activate()
+        """激活Chrome浏览器窗口。"""
+        if not self.browser_window:
+            self.find_browser_window()
+        if self.browser_window:
+            if self.browser_window.isMinimized:
+                self.browser_window.restore()
+            self.browser_window.activate()
             time.sleep(0.5)
 
     def switch_to_feishu(self):
@@ -54,9 +54,9 @@ class FeishuBrowserClient:
 
     def click_page_center(self):
         """点击页面中心位置。"""
-        if self.quark_window:
-            x = self.quark_window.left + self.quark_window.width // 2
-            y = self.quark_window.top + self.quark_window.height // 3
+        if self.browser_window:
+            x = self.browser_window.left + self.browser_window.width // 2
+            y = self.browser_window.top + self.browser_window.height // 3
             pyautogui.click(x, y)
         else:
             pyautogui.click()

@@ -205,12 +205,12 @@ class FeishuSyncService:
         print(f"捏捏每日出单表: 标签页 {FEISHU_DAILY_TAB_NUMBER}")
         print()
 
-        print("[1/4] 查找夸克浏览器窗口...")
-        quark = self.master_client.find_quark_window()
-        if not quark:
-            print("错误：未找到夸克浏览器窗口，请确保夸克已打开")
+        print("[1/4] 查找Chrome浏览器窗口...")
+        browser = self.master_client.find_browser_window()
+        if not browser:
+            print("错误：未找到Chrome浏览器窗口，请确保Chrome已打开")
             return 1
-        print(f"  找到: {quark.title[:60]}")
+        print(f"  找到: {browser.title[:60]}")
 
         print("\n[2/4] 读取总表格数据...")
         master_data = self.read_master_table()

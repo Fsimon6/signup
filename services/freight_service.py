@@ -161,12 +161,12 @@ class FreightService:
         if self.completed_set:
             print(f"断点续传：已完成 {len(self.completed_set)} 个单号\n")
 
-        print("[1/4] 查找夸克浏览器窗口...")
-        quark = self.feishu.find_quark_window()
-        if not quark:
-            print("错误：未找到夸克浏览器窗口，请确保夸克已打开")
+        print("[1/4] 查找Chrome浏览器窗口...")
+        browser = self.feishu.find_browser_window()
+        if not browser:
+            print("错误：未找到Chrome浏览器窗口，请确保Chrome已打开")
             return 0, 0, 0
-        print(f"  找到: {quark.title[:60]}")
+        print(f"  找到: {browser.title[:60]}")
 
         print("\n[2/4] 读取飞书表格数据...")
         rows, amount_col, tracking_col = self.read_all_data()

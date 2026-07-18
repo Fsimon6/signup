@@ -101,12 +101,12 @@ class ExcelImportService:
         print(f"Excel文件: {self.excel_source.file_path.name if self.excel_source.file_path else '未找到'}")
         print()
 
-        print("[1/4] 查找夸克浏览器窗口...")
-        quark = self.feishu.find_quark_window()
-        if not quark:
-            print("错误：未找到夸克浏览器窗口，请确保夸克已打开")
+        print("[1/4] 查找Chrome浏览器窗口...")
+        browser = self.feishu.find_browser_window()
+        if not browser:
+            print("错误：未找到Chrome浏览器窗口，请确保Chrome已打开")
             return 1
-        print(f"  找到: {quark.title[:60]}")
+        print(f"  找到: {browser.title[:60]}")
 
         print("\n[2/4] 读取Excel数据...")
         try:
