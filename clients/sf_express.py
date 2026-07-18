@@ -25,7 +25,7 @@ from config import (
     WAIT_FOR_USER,
 )
 
-PROJECT_DIR = Path(__file__).parent
+PROJECT_DIR = Path(__file__).parent.parent
 CHROME_DATA_DIR = PROJECT_DIR / "sf_browser_data"
 
 

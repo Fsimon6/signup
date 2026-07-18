@@ -6,8 +6,8 @@ import json
 import time
 from pathlib import Path
 
-PROGRESS_FILE = Path(__file__).parent / ".sf_progress.json"
-FAILED_FILE = Path(__file__).parent / ".sf_failed.json"
+PROGRESS_FILE = Path(__file__).parent.parent / ".sf_progress.json"
+FAILED_FILE = Path(__file__).parent.parent / ".sf_failed.json"
 
 
 def load_progress() -> set[str]:

@@ -11,6 +11,7 @@ COL_AMOUNT = "实付顺丰邮费"
 
 FEISHU_TAB_NUMBER = int(os.getenv("FEISHU_TAB_NUMBER", "1"))
 SF_TAB_NUMBER = int(os.getenv("SF_TAB_NUMBER", "2"))
+FEISHU_DAILY_TAB_NUMBER = int(os.getenv("FEISHU_DAILY_TAB_NUMBER", "3"))
 
 QUERY_DELAY_SECONDS = float(os.getenv("QUERY_DELAY_SECONDS", "2"))
 SF_RESULT_WAIT_SECONDS = float(os.getenv("SF_RESULT_WAIT_SECONDS", "3.5"))
