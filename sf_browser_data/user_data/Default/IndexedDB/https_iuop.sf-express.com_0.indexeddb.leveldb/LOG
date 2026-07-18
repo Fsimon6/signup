@@ -1,0 +1,14 @@
+2026/07/17-16:47:03.598 43a8 Reusing MANIFEST C:\Users\Administrator\Desktop\signup\sf_browser_data\user_data\Default\IndexedDB\https_iuop.sf-express.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/07/17-16:47:03.598 43a8 Recovering log #149
+2026/07/17-16:47:03.599 43a8 Reusing old log C:\Users\Administrator\Desktop\signup\sf_browser_data\user_data\Default\IndexedDB\https_iuop.sf-express.com_0.indexeddb.leveldb/000149.log 
+2026/07/17-16:47:03.599 43a8 Delete type=2 #147
+2026/07/17-16:47:19.239 43a8 Level-0 table #154: started
+2026/07/17-16:47:19.241 43a8 Level-0 table #154: 579 bytes OK
+2026/07/17-16:47:19.241 43a8 Delete type=0 #149
+2026/07/17-16:47:19.242 43a8 Manual compaction at level-0 from '\x00,\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00-\x00\x00\x00' @ 0 : 0; will stop at '\x00,\x00\x00\x05' @ 1176 : 1
+2026/07/17-16:47:19.242 43a8 Compacting 1@0 + 1@1 files
+2026/07/17-16:47:19.243 43a8 Generated table #155@0: 51 keys, 1700 bytes
+2026/07/17-16:47:19.243 43a8 Compacted 1@0 + 1@1 files => 1700 bytes
+2026/07/17-16:47:19.243 43a8 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/07/17-16:47:19.243 43a8 Delete type=2 #154
+2026/07/17-16:47:19.243 43a8 Manual compaction at level-0 from '\x00,\x00\x00\x05' @ 1176 : 1 .. '\x00-\x00\x00\x00' @ 0 : 0; will stop at (end)

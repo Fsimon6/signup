@@ -5,21 +5,18 @@ __pycache__/
 *.pyc
 *.pyo
 .pytest_cache/
-.mypy_cache/
 *.egg-info/
 dist/
 build/
 
 .venv/
 
-sf_browser_data/
-browser_data/
-
 .sf_progress.json
 .sf_failed.json
 *.tmp
 
 *.log
+logs/
 
 .vscode/
 .idea/
@@ -29,3 +26,10 @@ drivers/
 
 Thumbs.db
 desktop.ini
+.DS_Store
+
+excel_source/
+*.xlsx
+*.xls
+~*.csv
+~*.xlsx

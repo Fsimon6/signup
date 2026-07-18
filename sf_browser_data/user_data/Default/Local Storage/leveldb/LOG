@@ -1,0 +1,18 @@
+2026/07/17-16:46:48.526 3f34 Reusing MANIFEST C:\Users\Administrator\Desktop\signup\sf_browser_data\user_data\Default\Local Storage\leveldb/MANIFEST-000001
+2026/07/17-16:46:48.530 3f34 Recovering log #56
+2026/07/17-16:46:48.532 3f34 Reusing old log C:\Users\Administrator\Desktop\signup\sf_browser_data\user_data\Default\Local Storage\leveldb/000056.log 
+2026/07/17-17:02:48.970 7720 Level-0 table #60: started
+2026/07/17-17:02:48.973 7720 Level-0 table #60: 20907 bytes OK
+2026/07/17-17:02:48.974 7720 Delete type=0 #56
+2026/07/17-17:25:48.965 7720 Level-0 table #62: started
+2026/07/17-17:25:48.969 7720 Level-0 table #62: 18976 bytes OK
+2026/07/17-17:25:48.970 7720 Delete type=0 #59
+2026/07/17-17:25:48.971 7720 Compacting 4@0 + 1@1 files
+2026/07/17-17:25:48.974 7720 Generated table #63@0: 35 keys, 8239 bytes
+2026/07/17-17:25:48.975 7720 Compacted 4@0 + 1@1 files => 8239 bytes
+2026/07/17-17:25:48.975 7720 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/07/17-17:25:48.976 7720 Delete type=2 #51
+2026/07/17-17:25:48.976 7720 Delete type=2 #54
+2026/07/17-17:25:48.976 7720 Delete type=2 #57
+2026/07/17-17:25:48.976 7720 Delete type=2 #60
+2026/07/17-17:25:48.976 7720 Delete type=2 #62
